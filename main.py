@@ -20,7 +20,7 @@ class PasswordManager:
         self.password_file = path
 
         if initial_values is not None:
-            for key, value in initial_values.item():
+            for key, value in initial_values.items():
                 self.add_password(key, value)
 
     def load_password_file(self, path):
